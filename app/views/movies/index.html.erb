@@ -1,0 +1,12 @@
+<h1>Movies</h1>
+<% @movies.each do |movie| %>
+    <h3><%= movie.name %></h3>
+    <p>Director: <%= movie.director.name %></p>
+    <p>Description: <%= movie.description %></p>
+    <p>Year: <%= movie.year %></p>
+    <p>Rating: <%= movie.rating %></p>
+    <p>Actors: <%= movie.actors.pluck(:name).join(", ") %></p>
+    <p>Filming Locations: <%= movie.locations.pluck(:name, :country).join(", ") %></p>
+    
+<% end %>
+<a href="/actors/index" class="custom-class">Actors</a>
