@@ -1,24 +1,29 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This assignment is about writing a small Ruby On Rails application. Use a methodoloy that works for you or that you are used to.
 
-Things you may want to cover:
+- [x] Create a new application with Ruby on Rails
 
-* Ruby version
+- [x] Study the content of movies.csv and reviews.csv
 
-* System dependencies
+- [x] Define a database schema and add it to your application
 
-* Configuration
+- [x] Write an import task to import both CSV-files
 
-* Database creation
+```rails csv:import_movies_actors ```
 
-* Database initialization
+```rails csv:import_reviews```
+- [x] Show an overview of all movies in your application
 
-* How to run the test suite
+      Once you open the app on http://localhost:3000 you will find movies index with including its information
+- [x] Make a search form to search for an actor
 
-* Services (job queues, cache servers, search engines, etc.)
+      Once you open the app on http://localhost:3000/actors/index you will find actor s
+- [x] Sort the overview by average stars (rating) in an efficient way
 
-* Deployment instructions
+**Design CSV importer/application for heavy data processing - [x]
 
-* ...
+
+Here I used smart csv to devide the large heavy data by chunks of size 1000
+
+[moviesReview.zip](https://github.com/khaledm356/moviesReview/files/14211604/moviesReview.zip)
