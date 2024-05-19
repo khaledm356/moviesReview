@@ -1,0 +1,15 @@
+<%= form_with(method: :get) do |form| %>
+    <%= form.text_field :search, placeholder: "Search by name" %>
+    <%= form.submit "Search" %>
+  <% end %>
+  
+  <h1>Actors</h1>
+  
+  <% @actors.each do |actor| %>
+    <div>
+    <h3><%= actor.name %><h3>
+    <h4>Movies</h4>
+    <p><%= actor.movies.pluck(:name).join(", ") %></p>
+    </div>
+  <% end %>
+  <a href="/" class="custom-class">Movies</a>
